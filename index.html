@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <title>GradGuide</title>
+    <link rel="icon" href="gg.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="navbar_stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="universal_stylesheet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="homepage_stylesheet.css">
   </head>
 
 <body>
@@ -34,7 +36,7 @@
   </div>
 
   <div class = button1>
-  <a href="signup.html" class="btn btn-danger" role="button">Sign up</a>
+  <a href="signup.html" class="btn btn-danger btn-lg" role="button">Sign up</a>
 </div>
 </div>
 
@@ -46,49 +48,96 @@
      <div container = "services">
        <h4>Our services</h4>
 
-          <div class="icons">
-          <div class="row">
-        <div class="col-sm">
-          <img id="cv" src= "Homepage_images/cv.jpg">
-        </div>
-
-        <div class="col-sm">
-          <img id="interviews" src ="Homepage_images/interview.jpg">
-        </div>
-
-        <div class="col-sm">
-          <img id="application"src ="Homepage_images/application.jpg">
-        </div>
-
+  <div class="icons">
+    <div class="row">
       <div class="col-sm">
-        <img id="cpd" src ="Homepage_images/cpd.jpg">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+            </div>
+            <div class="flip-box-front">
+          <img id="cv" src= "Homepage_images/cv1.jpg" alt=cvpicture>
+          </div>
+          <div class="flip-box-back">
+            <p1 id="cviconword"> CV tips! </p1>
+          </div>
       </div>
-
-    </div>
   </div>
 </div>
 
-  <div class= "cd-fixed-bg.cd-fixed-bg--2"
+    <div class="col-sm">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+          </div>
+          <div class="flip-box-front">
+          <img id="interviews" src ="Homepage_images/interview1.jpg">
+        </div>
+      <div class="flip-box-back">
+        <p1 id="interviewiconword"> Interviews! </p1>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="col-sm">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+          </div>
+          <div class="flip-box-front">
+            <img id="application"src ="Homepage_images/application1.jpg">
+        </div>
+          <div class="flip-box-back">
+            <p1 id="applicationiconword"> Writing applications! </p1>
+          </div>
+        </div>
+      </div>
+</div>
+
+      <div class="col-sm">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+            </div>
+            <div class="flip-box-front">
+              <img id="cpd" src ="Homepage_images/cpd1.jpg">
+            </div>
+            <div class="flip-box-back">
+                <p1 id="cpdiconword"> Continuing professional development! </p1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+  <div class= "cd-fixed-bg.cd-fixed-bg--2">
     <div container = reviews>
-      <h3> Reviews </h3>
-      <p2 id="review1"> "Gradguru has helped me land my dream job! The interview tips provided has given me the confidence to face any interviews in the future" - Harindi, junior scientist </p2>
-      <p2 id="review2"> "Gradguru has given me the opportunity to progress with my career. By following the advice on career progressive development, I have now taken on programming courses!" - Rachel, placement student, GSK </p2>
+      <h3 id="reviewsheading"> Reviews </h3>
+      <p2 id="review1"> "Gradguide has helped me land my dream job! The interview tips provided has given me the confidence to face any interviews in the future" - Harindi, junior scientist </p2>
+      <p2 id="review2"> "Gradguide has given me the opportunity to progress with my career. By following the advice on career progressive development, I have now taken on programming courses!" - Rachel, placement student, GSK </p2>
+      <p2 id="review3"> "The tips I gained in cpd, gave me the chance to enhance my skill set, particulalrly through the recommmended online courses!" - Tia, Psychology student </p2>
     </div>
   </div>
 
-  <div class ="Contact">
-    <ul>
-    <li id="follow"> Follow us! </li>
-    <li id="contact"style="float:right"> Contact us </li>
-  </div>
+  <div class = "homepagefooter">
+    <h4 id="follow"> Follow us: </h4>
+      <div class="row">
+        <div class="col-">
+            <a href="https://www.instagram.com">
+            <img id="instagram" src="Social_media_images/instagram.jpg">
+          </div>
+        <div class="col-">
+            <a href ="https://www.facebook.com/">
+            <img id="fb" src="Social_media_images/facebook.png">
+        </div>
+        <div class="col-">
+          <a href="https://twitter.com/?lang=en-gb">
+          <img id="twitter" src="Social_media_images/twitter.jpg">
+        </div>
+      </div>
 
-  <div class="pics">
-    <ul>
-    <li id="instalist"><a href="https://www.instagram.com/"><img id="instagram" src="instagram.jpg"></li>
-    <li id="fblist"><a href="https://www.facebook.com/"><img id="facebook" src="facebook.png"></li>
-    <li id="twitterlist"><a href="https://twitter.com/?lang=en-gb"><img id="twitter"src="twitter.jpg"></li>
-  </ul>
-  </div>
 
 <script src="javascript.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
