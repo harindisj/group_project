@@ -1,0 +1,344 @@
+
+  .column {
+    float: left;
+    width: 50%;
+    display: flex;
+    margin: 40px, 40px 40px, 40px;
+  }
+
+  .row {
+      margin-right: 40px;
+      margin-left: -40px;
+      margin-top: 80px;
+      margin-bottom: 40px;
+  }
+
+  img {
+  max-width: 100%;
+  height: auto;
+}
+
+.peopleCarouselImg img {
+  width: auto;
+  height: 700px;
+  max-height: 700px;
+  padding-top: 3.5vh;
+}
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+    color: #eee;
+    font-weight: lighter;
+  }
+
+  .bg-text {
+    color: white;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 90%;
+    padding: 40px;
+    text-align: center;
+}
+
+
+.bg-image {
+  background-image: url("../jobs.jpeg");
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lead {
+  display: block;
+  justify-content: flex-end;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+
+.flip-box-back {
+  text-align: center;
+  padding: 0 50px 0 50px;
+  padding-top: 70px;
+  justify-content: center;
+}
+
+.flip-box-front {
+  background-color: black;
+  background-image: url(phonecall.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+.flip-box {
+  background-color: transparent;
+  width: 600px;
+  height: 400px;
+  border: 1px solid 255, 255, 255, 0;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: black;
+  background-image: url(phonecall.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.flip-box-back {
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  transform: rotateY(180deg);
+}
+
+.flip-box-back2 {
+  text-align: center;
+  padding: 0 50px 0 50px;
+  padding-top: 70px;
+  justify-content: center;
+}
+
+.flip-box-front2 {
+  background-color: black;
+  background-image: url(outfit.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 600px;
+  height: 400px;
+  border: 1px solid 255, 255, 255, 0.5;
+  perspective: 1000px;
+}
+
+.flip-box-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-box2:hover .flip-box-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front2, .flip-box-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front2 {
+  background-color: black;
+  background-image: url("images/outfit.jpg")
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.flip-box-back2 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  transform: rotateY(180deg);
+}
+
+.flip-box-back3 {
+  text-align: center;
+  padding: 0 50px 0 50px;
+  padding-top: 70px;
+  justify-content: center;
+}
+
+.flip-box-front3 {
+  background-color: black;
+  background-image: url(bodylanguage.jpeg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.flip-box3 {
+  background-color: transparent;
+  width: 600px;
+  height: 400px;
+  border: 1px solid 255, 255, 255, 0.5;
+  perspective: 1000px;
+}
+
+.flip-box-inner3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-box3:hover .flip-box-inner3 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front3, .flip-box-back3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front3 {
+  background-color: black;
+  background-image: url("images/bodylanguage.jpg")
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.flip-box-back3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  transform: rotateY(180deg);
+}
+
+.flip-box-back4 {
+  text-align: center;
+  padding: 0 50px 0 50px;
+  padding-top: 70px;
+  justify-content: center;
+}
+
+.flip-box-front4 {
+  background-color: black;
+  background-image: url(phonecall.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+.flip-box4 {
+  background-color: transparent;
+  width: 600px;
+  height: 400px;
+  border: 1px solid 255, 255, 255, 0.5;
+  perspective: 1000px;
+}
+
+.flip-box-inner4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-box4:hover .flip-box-inner4 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front4, .flip-box-back4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front4 {
+  background-color: black;
+  background-image: url(questions.png);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.flip-box-back4 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  transform: rotateY(180deg);
+}
+
+.carousel {
+  padding: 0 80px 0 80px;
+
+}
+
+.flip-box2, .flip-box3, .flip-box4, .flip-box {
+  padding: 0 70px 0 70px;
+  padding-top: 10px;
+}
