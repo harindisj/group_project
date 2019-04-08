@@ -62,44 +62,129 @@ h3 {
 #cv{
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   display:flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 50px;
+  border-radius: 50%
 }
+
+
+.flip-box-back {
+  text-align: center;
+  padding: 0 50px 0 50px;
+  padding-top: 70px;
+  justify-content: center;
+  color: black;
+}
+
+.flip-box-front {
+  background-color: transparent;
+  background-image: url(cv1.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+.flip-box {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid 255, 255, 255, 0;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: black;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 200px;
+  height:200px;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: transparent;
+  background-image: url(cv1.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.flip-box-back {
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  transform: rotateY(180deg);
+}
+
+#cviconword{
+  color: black;
+  font-size: 20px;
+  font-style: helvetica;
+  align-items: center;
+}
+
 
 #interviews{
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   margin-left: 50px;
   display:flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 50%;
 }
 
-
+#interviewiconword{
+  color: black;
+  font-size: 20px;
+  font-style: helvetica;
+  align-items: center;
+}
 #application{
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   margin-left: 50px;
   display:flex;
   justify-content: space-between;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#applicationiconword{
+  color: black;
+  font-size: 20px;
+  font-style: helvetica;
   align-items: center;
 }
 
 #cpd{
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   margin-left: 50px;
   display:flex;
   justify-content: space-between;
   align-items: center;
 }
 
+#cpdiconword{
+  color: black;
+  font-size: 20px;
+  font-style: helvetica;
+  align-items: center;
+}
 
 div.reviews{
   display: flex;
@@ -115,6 +200,19 @@ h4{
   padding: 50px;
   margin-top: 0px;
   font-size: 40px;
+  color: black;
+}
+
+.reviews{
+  height: 300px;
+  width: 100%;
+
+}
+
+#reviewsheading{
+  color: black;
+  font-size: 40px;
+  padding: 30px;
 }
 
 #review1{
@@ -123,6 +221,7 @@ h4{
   margin-right: 50px;
   font-size: 20px;
   margin-bottom: 30px;
+  padding-left: 40px;
 }
 
 #review2{
@@ -131,8 +230,19 @@ h4{
   margin-right: 50px;
   font-size: 20px;
   margin-top: 30px;
+  padding: 30px;
+  margin-bottom: 10px;
 }
 
+#review3{
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
 /* .contact{
   display: flex;
   justify-content:center;
@@ -141,103 +251,43 @@ h4{
   margin-bottom: 100px;
 } */
 
+.homepagefooter{
+  background-color: black;
+  width: 100%;
+  height: 20%;
+
+}
+
 #follow{
-  color: white;
-  font-size: 32px;
-}
-
-#contact{
-  color: white;
-  font-size: 32px;
-}
-
-#Followus{
-  display: flex;
-  justify-content:space-between;
-  align-items:center;
   font-size: 30px;
-  color: black;
-  margin-top: 100px;
-  padding: 100px;
-
-}
-
-
-#Contactus{
-  display: flex;
-  justify-content:space-between;
-  align-items:center;
-  font-size: 30px;
-  color: black;
-  margin-top: 100px;
-  padding: 100px;
-
-
-}
-
-.contact{
-  background-color: #333;
-}
-
-.social{
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: auto;
+  margin: auto;
 }
 
 #instagram{
-  display: flex;
-  justify-content:space-between;
-  align-items:center;
   width: 50px;
   height: 50px;
-  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 550px;
+  margin-bottom: 20px;
+
+}
+
+#fb{
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
 }
 
 #twitter{
-  display: flex;
-  justify-content:space-between;
-  align-items:center;
   width: 50px;
   height: 50px;
-  margin-left: 50px;
-}
-
-#facebook{
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  width: 50px;
-  height: 50px;
-  margin-left: 50px;
-}
-
-.Contactdetails{
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-}
-
-
-
-.contact ul, .pics ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+  margin-left: 30px;
